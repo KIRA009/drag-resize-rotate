@@ -1,0 +1,32 @@
+div {
+	background-color: yellow;
+	position: relative;
+}
+div:hover {
+	cursor: move;
+}
+#resize, #rotate {
+	display: block;
+	position: relative;
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+	z-index: 1;
+	opacity: 0.5;
+}
+#resize {
+	top: 100%;
+	background-color: blue;
+}
+#rotate {
+	top: -60px;
+	background-color: red;
+}
+#resize:hover {
+	opacity: 1;
+	cursor: nwse-resize;
+}
+#rotate:hover {
+	opacity: 1;
+	cursor: pointer;
+}
